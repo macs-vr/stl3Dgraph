@@ -137,6 +137,7 @@ tags
 # executables
 mandelbrot
 saddle
+julia
 
 # STL files
 *.stl

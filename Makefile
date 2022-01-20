@@ -1,6 +1,6 @@
 CXX	= g++ -O3
 
-all: saddle mandelbrot
+all: saddle mandelbrot julia
 
 graph.o: graph.cpp graph.hpp
 	$(CXX) -c graph.cpp
@@ -16,3 +16,9 @@ mandelbrot.o: mandelbrot.cpp graph.hpp
 
 mandelbrot: mandelbrot.o graph.o
 	$(CXX) -o mandelbrot mandelbrot.o graph.o
+
+julia.o: julia.cpp graph.hpp
+	$(CXX) -c julia.cpp
+
+julia: julia.o graph.o
+	$(CXX) -o julia julia.o graph.o
