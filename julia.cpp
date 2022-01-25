@@ -71,9 +71,10 @@ int main()
   //g.c = complex<double>(0,1); // dendrite
   //g.c = complex<double>(0.25,0); // cauliflower
   g.c = complex<double>(-0.123,0.745); // rabbit
-  
+    
   //g.setWH(200,200);
-  g.setWH(1000,1000);
+  //g.setWH(1000,1000);
+  g.setWH(2000,2000);
   
   g.setRegion(-2, 2, -2, 2);
     

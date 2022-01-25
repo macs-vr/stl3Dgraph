@@ -138,6 +138,10 @@ tags
 mandelbrot
 saddle
 julia
+randomJulia
+
+# output folder
+outputs/
 
 # STL files
 *.stl
@@ -145,3 +149,5 @@ julia
 # pictures
 *.png
 
+# G-code files
+*.gcode

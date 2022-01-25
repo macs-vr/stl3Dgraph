@@ -1,6 +1,6 @@
 CXX	= g++ -O3
 
-all: saddle mandelbrot julia
+all: saddle mandelbrot julia randomJulia
 
 graph.o: graph.cpp graph.hpp
 	$(CXX) -c graph.cpp
@@ -22,3 +22,9 @@ julia.o: julia.cpp graph.hpp
 
 julia: julia.o graph.o
 	$(CXX) -o julia julia.o graph.o
+
+randomJulia.o: randomJulia.cpp graph.hpp
+	$(CXX) -c randomJulia.cpp
+
+randomJulia: randomJulia.o graph.o
+	$(CXX) -o randomJulia randomJulia.o graph.o
