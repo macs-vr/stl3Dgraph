@@ -19,12 +19,15 @@ public:
   { xmin = x1; xmax = x2; ymin = y1; ymax=y2; }
 
   std::vector<std::vector<double> > z;
-  
+
   virtual double f(double x, double y);
 
   void setZ();
+  void do_subdivision(double x0, double x1, double y0, double y1, int max);
   
   void outputGraph();
+  void outputTriangels(double x0, double x1, double y0, double y1);
+
   void outputSides();
   void outputBottom();
   
